@@ -8,7 +8,7 @@ public class TicketImplement extends AbstractTicket {
     public int applyTicketDiscount() {
         // Simple output message as a method placeholder
         System.out.println("applyTicketDiscount() called in TicketImplement. No discount applied.");
-        return 0;  // Return 0% discount.
+        return 0;  
     }
 
     @Override
