@@ -1,7 +1,7 @@
 import java.util.List;
 
 //Defines methods to manage group booking data.
-//Managed by the Marketing team; prevents seats held for group bookings are not sold.
+//Managed by Marketing team; prevents seats held for group bookings from being sold.
 
 public interface GroupBookingDataInterface {
     
