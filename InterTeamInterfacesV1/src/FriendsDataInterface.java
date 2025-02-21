@@ -1,7 +1,7 @@
 import java.util.List;
 
-//Provides methods to access "Friends of Lancaster" data.
-//Managed by the Marketing team; provides priority access information to the Box Office team.
+//Defines methods to access "Friends of Lancaster" data.
+//Managed by Marketing team; provides priority access information to Box Office team.
 
 public interface FriendsDataInterface {
     
