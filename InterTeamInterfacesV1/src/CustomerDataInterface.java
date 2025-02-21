@@ -1,17 +1,17 @@
 import java.util.List;
 
-//Provides methods to access and update customer data.
-//Used by both the Operations and Marketing teams for customer insights.
+//Defines methods to access and update customer data.
+//Used by both Operations and Marketing teams for customer insights.
 
 public interface CustomerDataInterface {
     
-    //Retrieves detailed customer information.
+    //Retrieves customer information.
     Customer getCustomerDetails(int customerID);
     
     //Retrieves all customers.
     List<Customer> getAllCustomers();
     
-    //Retrieves list of events attended by specific customer.
+    //Retrieves list of events attended by a customer.
     List<Event> getEventsAttendedByCustomer(int customerID);
     
     //Updates customer information.
