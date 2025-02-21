@@ -1,7 +1,7 @@
 import java.util.List;
 
-//Defines the methods for accessing and updating calendar data. 
-//Data managed by the Operations team and used by the Box Office team for ticket sales.
+//Defines methods for accessing and updating calendar data. 
+//Data managed by the Operations team and used by Box Office team for ticket sales.
 
 public interface CalendarDataInterface {
 
