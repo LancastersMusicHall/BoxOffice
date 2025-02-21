@@ -1,7 +1,7 @@
 import java.util.List;
 
 //Defines methods for accessing and updating seating data.
-//Seating configurations are managed by the Operations team and reviewed by the Box Office team.
+//Seating configurations managed by Operations team and reviewed by Box Office team.
 
 public interface SeatingDataInterface {
     
