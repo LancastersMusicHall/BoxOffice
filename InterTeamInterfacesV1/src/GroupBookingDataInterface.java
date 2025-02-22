@@ -1,19 +1,27 @@
 import java.util.List;
+import java.util.Date;
 
-//Defines methods to manage group booking data.
-//Managed by Marketing team; prevents seats held for group bookings from being sold.
+// Implementation of GroupBookingDataInterface
+class GroupBookingData implements GroupBookingDataInterface {
+    @Override
+    public GroupBooking getGroupBookingInfo(int groupBookingID) {
+        // Retrieves group booking information
+        return null;
+    }
 
-public interface GroupBookingDataInterface {
-    
-    //Retrieves information for specific group booking.
-    GroupBooking getGroupBookingInfo(int groupBookingID);
-    
-    //Retrieves list of group bookings (held seats) for an event.
-    List<GroupBooking> getHeldSeats(int eventID);
-    
-    //Cancels group booking.
-    void cancelGroupBooking(int groupBookingID, int customerID);
-    
-    //Releases any group bookings that are expired.
-    void releaseExpiredHoldings();
+    @Override
+    public List<GroupBooking> getHeldSeats(int eventID) {
+        // Retrieves held seats for an event
+        return null;
+    }
+
+    @Override
+    public void cancelGroupBooking(int groupBookingID, int customerID) {
+        // Cancels group booking
+    }
+
+    @Override
+    public void releaseExpiredHoldings() {
+        // Releases expired group bookings
+    }
 }
