@@ -1,13 +1,16 @@
 import java.util.List;
+import java.util.Date;
 
-//Defines methods to access "Friends of Lancaster" data.
-//Managed by Marketing team; provides priority access information to Box Office team.
+// Implementation of FriendsDataInterface
+class FriendsData implements FriendsDataInterface {
+    @Override
+    public List<Friend> getPriorityHolders() {
+        // Retrieves list of priority holders
+        return null;
+    }
 
-public interface FriendsDataInterface {
-    
-    //Retrieves list of priority holders (friends) who have priority access to tickets and seats.
-    List<Friend> getPriorityHolders();
-    
-    //Holds seats for a friend for an event.
-    void holdSeatsForFriend(int friendID, int eventID);
+    @Override
+    public void holdSeatsForFriend(int friendID, int eventID) {
+        // Holds seats for a friend
+    }
 }
