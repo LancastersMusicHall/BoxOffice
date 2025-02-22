@@ -1,19 +1,27 @@
 import java.util.List;
+import java.util.Date;
 
-//Defines methods for accessing and updating seating data.
-//Seating configurations managed by Operations team and reviewed by Box Office team.
+// Implementation of SeatingDataInterface
+class SeatingData implements SeatingDataInterface {
+    @Override
+    public Seat getSeatInfo(int seatID) {
+        // Retrieves seat information
+        return null;
+    }
 
-public interface SeatingDataInterface {
-    
-    //Retrieves information for a seat.
-    Seat getSeatInfo(int seatID);
-    
-    //Retrieves seating arrangement for a hall.
-    List<Seat> getSeatingArrangement(int hallID);
-    
-    //Marks seat as having a restricted view.
-    void markSeatAsRestricted(int seatID);
-    
-    //Updates the accessibility status of a seat.
-    void updateSeatAccessibility(int seatID, boolean isAccessible);
+    @Override
+    public List<Seat> getSeatingArrangement(int hallID) {
+        // Retrieves seating arrangement for a hall
+        return null;
+    }
+
+    @Override
+    public void markSeatAsRestricted(int seatID) {
+        // Marks seat as restricted view
+    }
+
+    @Override
+    public void updateSeatAccessibility(int seatID, boolean isAccessible) {
+        // Updates seat accessibility
+    }
 }
