@@ -1,16 +1,22 @@
 import java.util.List;
+import java.util.Date;
 
-//Defines methods for accessing and updating calendar data. 
-//Data managed by the Operations team and used by Box Office team for ticket sales.
+// Implementation of CalendarDataInterface
+class CalendarData implements CalendarDataInterface {
+    @Override
+    public List<Event> getUpcomingEvents() {
+        // Returns list of upcoming events
+        return null;
+    }
 
-public interface CalendarDataInterface {
+    @Override
+    public Event getEventDetails(int eventID) {
+        // Retrieves event details
+        return null;
+    }
 
-    //Retrieves list of upcoming events.
-    List<Event> getUpcomingEvents();
-
-    //Retrieves an event details.
-    Event getEventDetails(int eventID);
-    
-    //Updates remaining ticket count for an event.
-    void updateRemainingTickets(int eventID, int newCount);
+    @Override
+    public void updateRemainingTickets(int eventID, int newCount) {
+        // Updates remaining tickets for an event
+    }
 }
