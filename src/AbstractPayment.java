@@ -6,12 +6,14 @@ public  abstract class AbstractPayment {
      Feel free to change any of this */
 
     private AbstractTicket ticket;
+    private final int transactionID;
     private final double amount;
     private final String paymentProcessor;
     private final String purchaseDate;
 
 
-    public AbstractPayment(double amount, String paymentProcessor, String purchaseDate) {
+    public AbstractPayment(int transactionID, double amount, String paymentProcessor, String purchaseDate) {
+        this.transactionID = transactionID;
         this.amount = amount;
         this.paymentProcessor = paymentProcessor;
         this.purchaseDate = purchaseDate;

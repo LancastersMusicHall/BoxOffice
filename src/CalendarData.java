@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public interface CalendarData {
+public interface CalendarData {
+    void updateCalendar();
+    String retrieveCalendarBooking();
 }
